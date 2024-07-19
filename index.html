@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Encuesta de Encuesta</title>
+     <link rel="stylesheet" href="styles.css"/>
+
+  </head>
+  <body>
+    <h1 id="title">Formulario de encuesta</h1>
+    <p id="description">Por favor, completa la siguiente encuesta para ayudarnos a mejorar.</p>
+    <form id="survey-form">
+
+        <label id="name-label" for="name">Nombre:</label>
+        <input id="name" type="text" name="name" placeholder="Ingresa tu nombre" required>
+        <label id="email-label" for="email">Email:</label> 
+        <input id="email" type="email" name="email" placeholder="Ejemplo@email.com" required>
+        <label id="number-label" for="number">Edad:</label> 
+        <input id="number" type="number" name="number" placeholder="14-120" min="14" max="120" required>
+        <label for="dropdown">Ocupación:</label> 
+        <select id="dropdown" name="occupation" required>
+              <option value="">Seleciona una opción </option>
+              <option value="estudiante">Estudiante</option>
+              <option value="empleado">Empleado</option>
+              <option value="autonomo">Autónomo </option>
+              <option value="otro">Otro</option>
+          </select>
+          <div class="genero">
+            <legend>Género:</legend>
+                <label><input type="radio" name="gender" value="masculino" class="inline" required>Masculino</label>
+                <label><input type="radio" name="gender" value="femenino" class="inline" required>Femenino</label>
+          </div>
+
+          <div class="interested">
+              <legend>Intereses:</legend> 
+                <label><input type="checkbox" name="interests" value="deportes" class="inline">Deportes</label>
+                <label><input type="checkbox" name="interests" value="musica" class="inline">Música</label>
+                <label><input type="checkbox" name="interests" value="tecnologia" class="inline">Tecnología</label>
+          </div>
+        <label for="comments">Comentarios adicionales:</label>
+        <textarea id="comments" name="comments" placeholder="Escribe tus comentarios aquí..."></textarea>
+        
+        <div class="enviar">
+        <button type="submit" id="submit">Enviar</button>
+        </div>
+        
+    </form>
+    <footer>
+      <p>Gracias por participar en nuestra encuesta.</p>
+    </footer>
+
+  </body>
+  
+</html>
